@@ -1,0 +1,35 @@
+.chatbody {
+  height: 215px;
+  width: 380px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.head {
+  text-align: center;
+  text-decoration: underline;
+}
+.msg {
+  color: white;
+  height: 40px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: blue;
+  text-align: center;
+}
+.newmsg {
+  width: 120px;
+  border-radius: 15px;
+  height: 50px;
+  color: rgb(255, 0, 0);
+  margin-left: 40px;
+}
+.edit {
+  background-color: rgb(243, 172, 31);
+  color: rgb(15, 59, 237);
+  float: right;
+  margin-right: 10px;
+}

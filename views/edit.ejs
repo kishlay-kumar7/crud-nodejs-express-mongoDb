@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <H2 style="text-align: center">Edit message below...</H2>
+    <div class="chatbody">
+      <form method="post" action="/chats/<%=data[0]._id %>/edit?_method=PATCH">
+        <label for="message"><strong>Message: </strong></label>
+        <br />
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          value="<%=data[0].message %>"
+          rows="15"
+          cols="25"
+        ></textarea>
+        <button type="submit" style="color: blue">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
